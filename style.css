@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    color: yellow;
+    font-weight: 100;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid yellow;
+    font-family: 'Lato', sans-serif;
+}
+
+#message {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    width: 300px;
+    border: 1px solid yellow;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+#madeby {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    width: 300px;
+    border: 1px solid yellow;
+    font-size: 12px;
+    margin-top: 4px;
+    padding: 4px;
+}
+
+span:first-child {
+    padding: 4px;
+}
+
+span:last-child {
+    border-left: 1px solid yellow;
+    cursor: pointer;
+    padding: 4px;
+}
+
+#timer {
+    margin: 24px 0;
+    font-size: 84px;
+}
+
+#startBtn,
+#pauseBtn,
+#resumeBtn {
+    font-size: 28px;
+    padding: 10px 0;
+    width: 300px;
+    outline: none;
+    border-top: 1px solid yellow;
+    border-bottom: none;
+    border-left: 1px solid yellow;
+    border-right: 1px solid yellow;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    animation-name: change-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {
+        color: yellow;
+    }
+
+    20% {
+        color: crimson;
+    }
+
+    40% {
+        color: violet;
+    }
+
+    60% {
+        color: cyan;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
